@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/emot"/>
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginTop="70dp"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="password"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:text="login"
+        android:onClick="onLogin"
+        android:background="#FFA500"
+        android:textSize="17sp"/>
+</LinearLayout>
